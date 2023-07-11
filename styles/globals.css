@@ -1,13 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Diphylleia&display=swap");
+/* globals.css */
+
 .content-text * {
   font-size: 1rem;
   font-weight: 300;
-  font-family: 'Inter', sans-serif;
+  font-family: "Diphylleia", serif;
   pointer-events: none;
   /* color: #000; */
   text-decoration: none;
   line-height: 1.5rem;
   /* padding: 0; */
   margin: 0;
+}
+
+.hello {
+  color: #fbfbfb;
+}
+
+.hello a {
+  color: #fbfbfb;
+}
+
+.blog-tile {
+  transition: background 0.2s ease-in-out;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.blog-tile:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.topbar path {
+  transition: all 0.2s ease;
+}
+
+/* Styling for the content inside the textbox */
+.content {
+  color: #333;
+}
+
+/* Bootstrap classes for padding and border radius inside the textbox */
+.content p {
+  margin-bottom: 0;
+}
+
+.experience {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.animate {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.animate img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden;
+  border-radius: 0;
+  animation: border-transform 10s linear infinite alternate forwards;
+  animation-name: border-transform;
+}
+
+.home h1,
+.blogs > h1,
+.about h1,
+.topbar h1,
+.contact h1 {
+  font-family: "Belleza", sans-serif;
 }
 
 .search-form {
@@ -33,7 +96,7 @@
   transition: background-color 200ms ease-in-out;
 }
 
-.search-form input:focus+#search-icon {
+.search-form input:focus + #search-icon {
   background-color: #e9ecef;
 }
 
@@ -41,74 +104,19 @@
   background-color: #e9ecef;
 }
 
-.blog-tile {
-  transition: background 0.2s ease-in-out;
-  border-radius: 0.5rem;
-  padding: 1rem;
-}
-
-.blog-tile:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-
-/* Styling for the content inside the textbox */
-.content {
-  color: #333;
-}
-
-.topbar path {
-  transition: all 0.2s ease;
-}
-
-/* Bootstrap classes for padding and border radius inside the textbox */
-.content p {
-  margin-bottom: 0;
-}
-
-.experience {
-  border: 1px solid #e0e0e0;
-  border-radius: 10px
-}
-
-.animate {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1/1;
-  position: relative;
-}
-
-.animate img {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  overflow: hidden;
-  border-radius: 0;
-  animation: border-transform 10s linear infinite alternate forwards;
-  animation-name: border-transform;
-}
-
-.home h1,
-.blogs>h1,
-.about h1,
-.topbar h1,
-.contact h1 {
-  font-family: 'Audiowide', cursive;
-}
-
 .name {
   font-size: 6rem;
   font-weight: 700;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   padding: 0;
   margin: 0;
 }
 
 .popover {
-  /* max-width: 400px; */
   max-width: 60%;
 }
 
 @keyframes border-transform {
-
   0%,
   100% {
     border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
@@ -156,15 +164,13 @@
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px,
-    rgba(0, 0, 0, 0.14) 0px 6px 10px 0px,
-    rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+    rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
   transition: background-color 250ms ease 0ms, box-shadow 250ms ease 0ms;
 }
 
-
 @media only screen and (max-width: 786px) {
   .blog-tile-image {
-    display: none;
+    display: none !important;
   }
 
   .blog-content {
@@ -178,11 +184,11 @@
     margin: 0;
   }
 
-  .hello>div:first-child {
+  .hello > div:first-child {
     width: 75%;
   }
 
-  .hello>div {
+  .hello > div {
     margin: 0 !important;
   }
 
@@ -191,8 +197,12 @@
     height: unset;
   }
 
-  .experience>div {
+  .experience > div {
     width: 100%;
+  }
+
+  .popover {
+    max-width: 80%;
   }
 
   .links {
@@ -207,7 +217,6 @@
     width: 100%;
     justify-content: center !important;
   }
-
 }
 
 .bi-trophy-fill {
@@ -215,35 +224,59 @@
 }
 
 .bg-dark-grey {
-  background-color: hsl(210, 11%, 20%)
+  background-color: hsl(210, 11%, 20%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bs-emphasis-color-rgb: 0, 0, 0;
-  }
+.bg-lgray {
+  background-color: #3a3a3a;
+}
 
-  .content {
-    color: #f2f2f2;
-  }
+html[data-bs-theme="dark"] {
+  --bs-body-bg: #3a3a3a !important;
+  --bs-emphasis-color-rgb: 0, 0, 0;
+}
 
-  .content h1 {
-    color: #f2f2f2 !important;
-  }
+html[data-bs-theme="dark"] .content {
+  color: #f2f2f2;
+}
 
-  .btn-outline-secondary {
-    --bs-btn-color: #f2f2f2;
-  }
+html[data-bs-theme="dark"] .content h1 {
+  color: #f2f2f2 !important;
+}
 
-  .bi-trophy-fill {
-    fill: #f2f2f2;
-  }
+html[data-bs-theme="dark"] .btn-outline-secondary {
+  --bs-btn-color: #f2f2f2;
+}
 
-  .search-form input:focus+#search-icon {
-    background-color: hsl(210, 11%, 20%)
-  }
+html[data-bs-theme="dark"] .bi-trophy-fill {
+  fill: #f2f2f2;
+}
 
-  #search-icon:hover {
-    background-color: hsl(210, 11%, 20%)
-  }
+html[data-bs-theme="dark"] .search-form input:focus + #search-icon {
+  background-color: hsl(210, 11%, 20%);
+}
+
+html[data-bs-theme="dark"] #search-icon:hover {
+  background-color: hsl(210, 11%, 20%);
+}
+
+html[data-bs-theme="dark"] .scrollToTopBtn {
+  background-color: #f2f2f2;
+}
+
+html[data-bs-theme="dark"] .scrollToTopBtn:hover {
+  background-color: #787878;
+}
+
+html[data-bs-theme="dark"] .scrollToTopBtn svg {
+  stroke: rgb(33, 33, 33);
+}
+
+html[data-bs-theme="dark"] .copy-button {
+  fill: #acb5bd;
+  transition: fill 200ms ease-in-out;
+}
+
+html[data-bs-theme="dark"] .copy-button:hover {
+  fill: #f2f2f2;
 }

@@ -1,36 +1,5 @@
 [
     {
-        "title": "Improving Few-Shot Prompts with Relevant Static Analysis Products",
-        "authors": [
-            "Toufique Ahmed",
-            "Kunal Suresh Pai",
-            "Premkumar Devanbu",
-            "Earl T. Barr"
-        ],
-        "type": "preprint",
-        "description": "Adding explicit semantic facts as prompts to Large Language Models improves their performance in code summarization tasks, with notable improvements exceeding 2 BLEU and, in some cases, even surpassing 30 BLEU, demonstrating the effectiveness of this approach in enhancing code analysis and extraction of essential information.",
-        "tags": [
-            "Software Engineering",
-            "Machine Learning"
-        ],
-        "link": "https://arxiv.org/pdf/2304.06815"
-    },
-    {
-        "title": "Validating Hardware and SimPoints with gem5: A RISC-V Board Case Study",
-        "authors": [
-            "Kunal Pai",
-            "Zhantong Qiu",
-            "Jason Lowe-Power"
-        ],
-        "type": "poster",
-        "description": "The poster discusses the development of a RISC-V board model (RISCVMatched) in gem5, along with a methodology for fine-tuning gem5 configurations to closely match real-life systems, resulting in more accurate hardware validation and simulation capabilities.",
-        "conference": "ISCA 2023: gem5 Workshop",
-        "tags": [
-            "Computer Architecture"
-        ],
-        "link": "https://www.gem5.org/assets/files/workshop-isca-2023/posters/validating-hardware-and-simpoints-with-gem5-poster.pdf"
-    },
-    {
         "title": "gem5 Vision",
         "authors": [
             "Parth Shah",

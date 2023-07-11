@@ -1,19 +1,11 @@
 [
     {
         "university": "University of California, Davis",
-        "start": "2023",
-        "end": "Ongoing",
-        "degree": "Master of Science",
-        "major": "Computer Science",
-        "gpa": "N.A."
-    },
-    {
-        "university": "University of California, Davis",
         "start": "2019",
         "end": "2023",
         "degree": "Bachelor of Science",
-        "major": "Computer Science and Engineering",
-        "gpa": "3.83",
-        "description": "Provost Scholar"
+        "major": "Computer Science",
+        "gpa": "3.6",
+        "description": "Relevent coursework: Operating Systems, Artificial Intelligence, Web Development, Machine Learning, Software Development, Object-Oriented Programming, Data structures, Algorithm Design and Analysis, and Computer Architecture."
     }
 ]
