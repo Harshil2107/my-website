@@ -3,7 +3,7 @@
         "title": "gem5 Vision",
         "start": "January 2023",
         "end": "June 2023",
-        "description": "Implemented advanced search functionality to enhance resource discovery within the gem5 ecosystem.\nIntroduced semantic versioning and built upon a comprehensive resource categorization system for easy access to newer resource versions under specific categories.\nExpanded gem5's database support by integrating local and remote JSON files and MongoDB, improving efficiency and user accessibility.",
+        "description": "Created an infrastructure for gem5 Resources for the Senior Design project as a team.\nImplemented advanced search functionality to enhance resource discovery within the gem5 ecosystem.\nIntroduced semantic versioning and built a comprehensive resource categorization system for easy access to resources.\nExpanded gem5’s database support by integrating local and remote JSON files as well as MongoDB, improving efficiency and user accessibility.\nCurrently the database handles 1.2 million+ requests a month and the website has 20,000+ visitors a month.",
         "skills": [
             "NextJS",
             "MongoDB",
@@ -11,7 +11,9 @@
             "JSON Schema"
         ],
         "links": {
-            "Poster": "https://www.gem5.org/assets/files/workshop-isca-2023/posters/gem5-vision-poster.pdf"
+            "Website": "https://resources.gem5.org/",
+            "Poster": "https://www.gem5.org/assets/files/workshop-isca-2023/posters/gem5-vision-poster.pdf",
+            "GitHub": "https://github.com/gem5/gem5-resources-website"
         },
         "image": "/images/gem5vision.png"
     },
@@ -31,6 +33,20 @@
             "Website": "https://quixfolio.vercel.app/"
         },
         "image": "/images/quixfolio.webp"
+    },
+    {
+        "title": "L-Store Database Implementation",
+        "start": "January 2023",
+        "end": "March 2023",
+        "description":"Collaborated with team members to develop a multi-threaded Python-based L-Store database with support for essential functionalities such as search, insert, update, sum, and delete queries.\nEnsured data integrity and persistence by incorporating disk writing mechanisms, safeguarding critical information against system failures or crashes.\nUtilized a BTree data structure to efficiently index and organize data, enhancing the database’s search and retrieval operations for faster response times.",
+        "skills":[
+            "Python",
+            "Multi-threading"
+        ],
+        "links": {
+            "GitHub": "https://github.com/wohmas/165A_group"
+        },
+        "image": "/images/l-store.png"
     },
     {
         "title": "UNIfy - Course Assistant",

@@ -4,7 +4,7 @@
         "organization": "University of California, Davis",
         "start": "August 2023",
         "end": "Current",
-        "description": "Woking on gem5 to develop new features and improve the existing ones.",
+        "description": "Contributing to gem5, a widely acclaimed computer architecture simulator with over 5500 citations since 2010, thousands of active users, and is integral to approximately 20% of top-tier research papers. Used by industry leaders such as AMD, Arm, Google, and many others. \nActively engaged with the gem5 community on GitHub, Slack, and mailing lists, providing support and addressing inquiries \nLed efforts to enhance gem5 resources with comprehensive tooling and introduced benchmark suites for efficient and reproducible research workflows",
         "location": "Davis, CA",
         "image": "/images/ucdavis.png"
     },
